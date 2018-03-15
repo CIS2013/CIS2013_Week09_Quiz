@@ -18,8 +18,6 @@ int main(){
 	}
 	
 	while(inFromFile >> item){
-	// for(int i=0; i<10000; i++){
-		// inFromFile >> item;
 		if(item == 'A'){ As++; }
 		else if(item == 'F'){ Fs++; }
 		else if(item == 'a'){ as++; }
