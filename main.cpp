@@ -17,10 +17,12 @@ int main(){
 		cout << "Something went wrong opening info.dat." << endl;
 	}
 	
-	for(int i=0; i<200; i++){
+	for(int i=0; i<9190; i++){
 		inFromFile >> item;
 		if(item == 'A'){ As++; }
-		
+		else if(item == 'F'){ Fs++; }
+		else if(item == 'a'){ as++; }
+		else if(item == 'b'){ bs++; }
 		total++;
 	}
 	
