@@ -17,8 +17,9 @@ int main(){
 		cout << "Something went wrong opening info.dat." << endl;
 	}
 	
-	for(int i=0; i<9190; i++){
-		inFromFile >> item;
+	while(inFromFile >> item){
+	// for(int i=0; i<10000; i++){
+		// inFromFile >> item;
 		if(item == 'A'){ As++; }
 		else if(item == 'F'){ Fs++; }
 		else if(item == 'a'){ as++; }
